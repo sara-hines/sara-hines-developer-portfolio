@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --light: #ffffff;
+    --medium-light: #d9dcd6;
+    --background: #2a607c;
+}
+
+body {
+    /* display: flex;
+    flex-direction: row; 
+    min-height: 100vh;
+    justify-content: flex-start;  */
+    background-color: rgb(242, 242, 252);
+    margin: 0;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(49, 52, 68);
+    color: var(--light);
+}
+
+.banner {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background: url("images/banner-image.png") rgba(70, 190, 255, 0.5);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+}
+
+.banner h2 {
+    float: right;
+    margin-right: 50px;
+    margin-top: 200px;
+    color: rgb(49, 52, 68);
+    background-color: rgb(146, 204, 205);
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    color: rgb(49, 52, 68);
+    background-color: rgb(146, 204, 205); 
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    color: rgb(146, 204, 205);
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    padding-bottom: 3px;
+    text-underline-offset: 10px;
+}
+
+a {
+    color: rgb(146, 204, 205);
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#about-me {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+}
+
+/* 
+#work {
+
+}
+
+#contact-me {
+
+} */
+
+.about-me-paragraphs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    /* Commented out because not working--margin-bottom: 10px; */
+}
+
+/* .sara-hines-photo {
+
+} */
+
+.sara-hines-photo img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 20%;
+}
+
+.section-title {
+    font-size: 30px;
+    /* display: inline;
+    text-align: right; */
+    text-underline-offset: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border-right: 5px solid rgb(49, 52, 68);
+}
+
+
+
+#work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+/* The below is not working. */
+/* h3#work {
+    float: left;
+} */
+
+.portfolio-projects-large {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(146, 204, 205);
+}
+
+.portfolio-projects-large h3 {
+    left: 10%; 
+    background-color: rgb(146, 204, 205);
+    height: 10%;
+}
+
+.portfolio-projects-small {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 27%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(146, 204, 205);
+}
+
+.portfolio-projects-small h3 {
+    left: 10%; 
+    background-color: rgb(146, 204, 205);
+    height: 10%;
+}
+
+#marketing-website {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image:url("images/marketing-website.png");
+    background-size: cover;
+    border: 20px;
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+#password {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image:url("images/password.jpg");
+    background-size: cover;
+    border: 20px;
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+#web-apis {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image:url("images/web-apis.png");
+    background-size: cover;
+    border: 20px;
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+#third-party-apis {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image:url("images/third-party-apis.png");
+    background-size: cover;
+    border: 20px;
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+#server-side-apis {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image:url("images/server-side-apis.jpg");
+    background-size: cover;
+    border: 20px;
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+    
+#contact-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%; 
+    justify-content: space-evenly;
+}
+
+.contact-links a {
+    color: rgb(49, 52, 68);
+    text-underline-offset: 10px;
+}
+
+/* @media screen and (min-width: 768px) {
+    .some-class {
+        width: x%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .some-class {
+        width: x%;
+    }
+} */
