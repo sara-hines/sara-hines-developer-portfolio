@@ -2,50 +2,41 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    --light: #ffffff;
-    --medium-light: #d9dcd6;
-    --background: #2a607c;
 }
 
+
 body {
-    /* display: flex;
-    flex-direction: row; 
+    /* /* display: flex;
+    flex-direction: row;  */
     min-height: 100vh;
     justify-content: flex-start;  */
     background-color: rgb(242, 242, 252);
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+a {
+    color: rgb(146, 204, 205);
+}
+
+a:hover {
+    color: rgb(155, 22, 155);
+    transition: all .1s ease-in-out;
 }
 
 header {
     padding: 20px;
     background-color: rgb(49, 52, 68);
-    color: var(--light);
-}
-
-.banner {
-    height: 300px;
-    width: 100%;
-    margin-bottom: 25px;
-    background: url("images/banner-image.png") rgba(70, 190, 255, 0.5);
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-position: center;
-}
-
-.banner h2 {
-    float: right;
-    margin-right: 50px;
-    margin-top: 200px;
-    color: rgb(49, 52, 68);
-    background-color: rgb(146, 204, 205);
+    display: flex;
 }
 
 header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 50px;
+    padding: 5px;
     color: rgb(49, 52, 68);
     background-color: rgb(146, 204, 205); 
+    line-height: 100%;
 }
 
 header nav {
@@ -53,25 +44,74 @@ header nav {
     margin-right: 20px;
     float: right;
     font-size: 20px;
+    line-height: 35px;
 }
 
 header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style-type: none;
     color: rgb(146, 204, 205);
 }
 
 header nav ul li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: right;
+    /* justify-content: space-around; */
+    padding: 5px 10px 10px 10px;
+    margin-left: 5vh;
+    font-size: 30px;
+    color: rgb(49, 52, 68);
+    text-underline-offset: 10px;
+
+}
+
+/* old code for the below selector:
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
     padding-bottom: 3px;
     text-underline-offset: 10px;
+} */
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 4vh;
+    background: url("images/banner-image.png") rgba(45, 182, 223, 0.347);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+    position: relative;
 }
 
-a {
-    color: rgb(146, 204, 205);
+.banner h2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin-left: 50px; */
+    margin-top: 200px;
+    padding: 20px;
+    color: rgb(49, 52, 68);
+    background-color: rgb(146, 204, 205);
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 600px;
+    justify-content: end;
 }
 
-.content-container {
+
+
+
+.flex-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -83,59 +123,91 @@ a {
     flex-direction: row;
 }
 
-/* 
-#work {
-
+.about-me-section-title {
+    font-size: 25px;
+    /* display: inline;
+    text-align: right; */
+    text-underline-offset: 10px;
+    /* margin-right: 10px; */
+    padding: 5px;
+    color: rgb(49, 52, 68);
+    border-right: 5px solid rgb(49, 52, 68);
+    margin-left: 2vh;
+    position: relative;
 }
-
-#contact-me {
-
-} */
 
 .about-me-paragraphs {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 2%;
+    margin-left: 4vh;
+    margin-right: 0vh;
     /* Commented out because not working--margin-bottom: 10px; */
 }
 
-/* .sara-hines-photo {
-
-} */
-
-.sara-hines-photo img {
+.sara-hines-photo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 20%;
 }
 
-.section-title {
-    font-size: 30px;
-    /* display: inline;
-    text-align: right; */
-    text-underline-offset: 10px;
-    margin-right: 10px;
-    padding: 5px;
-    border-right: 5px solid rgb(49, 52, 68);
+.sara-hines-photo img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto 0;
 }
 
 
 
+
+/* I am not sure about the right: 5% below--it does not seem to be doing anything. */
+#work-section-title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 25px;
+    text-underline-offset: 10px;
+    border-right: 5px solid rgb(49, 52, 68);
+    margin-left: 34px;
+    margin-top: 4vh;
+    position: relative;
+    height: 180vh;
+}
+
+/* .work-grid-container {
+    display: grid;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+/* the below is what I tried for the element housing all of the work related content, but I'm trying grid now. */
+#work {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10vh;
+}
+
+/* The above id selector used to have the following styling.
 #work {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
-}
+} */
 
 /* The below is not working. */
 /* h3#work {
     float: left;
 } */
 
-.portfolio-projects-large {
+/* The below is what I used to have for .portfolio-projects-large */
+/* .portfolio-projects-large {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -143,30 +215,107 @@ a {
     border-style: solid;
     border-width: 4px;
     border-color: rgb(146, 204, 205);
-}
+} */
 
-.portfolio-projects-large h3 {
-    left: 10%; 
-    background-color: rgb(146, 204, 205);
-    height: 10%;
-}
+/* check out the width property in the below .portfolio-projects-large and mess with it */
 
-.portfolio-projects-small {
+
+
+/* the width: 100% in the below id selector makes it so that the background image takes up 100% of the width of the box allocated for it. */
+#marketing-website {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 27%;
+    white-space:normal;
+    word-wrap:break-word;
+    /* justify-content: space-around; */
+    background-image:url("images/marketing-website.png");
+    background-size: cover;
+    border: 20px;
+    margin-top: -180vh;
+    margin-left: 7.5vh;
+    /* margin-bottom: 100vh; */
+    height: calc(100vh - 100px);
+    width: 96%;
     border-style: solid;
     border-width: 4px;
     border-color: rgb(146, 204, 205);
+    background-color: rgba(21, 54, 54, 0.2);
+    background-blend-mode: overlay;
+    text-decoration: none;
+    /* box-sizing: border-box; */
+    /* the below code was an attempt to get the marketing website box to be most of the width of the viewport, but it didn't work. */
+    /* flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0; */
 }
 
-.portfolio-projects-small h3 {
-    left: 10%; 
+#marketing-website:hover {
+    background-color: rgb(146, 204, 205, 0.1);
+    background-blend-mode: overlay;
+    transition: all .1s ease-in-out;
+  }
+
+#marketing-website h3 {
+    display: inline;
+    position: relative;
+    top: 70vh;
+    font-size: 35px;
     background-color: rgb(146, 204, 205);
-    height: 10%;
+    color: rgb(49, 52, 68);
+    width: 50vw;
+    height: 15vh;
+    /* inline-size: max-content; */
 }
 
+#password h3 {
+    display: inline;
+    position: relative;
+    top: 39.5vh;
+    font-size: 30px;
+    background-color: rgb(146, 204, 205);
+    color: rgb(49, 52, 68);
+    width: 50vw;
+    height: 10vh;
+}
+
+
+#web-apis h3 {
+    display: inline;
+    position: relative;
+    top: 39.5vh;
+    font-size: 30px;
+    background-color: rgb(146, 204, 205);
+    color: rgb(49, 52, 68);
+    width: 50vw;
+    height: 10vh;
+}
+
+#third-party-apis h3 {
+    display: inline;
+    position: relative;
+    top: 25vh;
+    font-size: 30px;
+    background-color: rgb(146, 204, 205);
+    color: rgb(49, 52, 68);
+    width: 50vw;
+    height: 10vh;
+}
+
+#server-side-apis h3 {
+    display: inline;
+    position: relative;
+    top: 25vh;
+    font-size: 30px;
+    background-color: rgb(146, 204, 205);
+    color: rgb(49, 52, 68);
+    width: 50vw;
+    height: 10vh;
+    border-bottom-style: none;
+}
+
+
+/* The below is what I used to have for #marketing-website
 #marketing-website {
     display: flex;
     flex-direction: row;
@@ -176,79 +325,228 @@ a {
     border: 20px;
     height: calc(100vh - 100px);
     width: 100%;
+} */
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    margin-top: 4vh;
+    margin-left: 7.5vh;
+    width: 100%;
+    margin-right: 10%;
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    margin-bottom: 10vh;
+
+    /* padding: 2vh; */
 }
+
+
 
 #password {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /* justify-content: space-around; */
     background-image:url("images/password.jpg");
     background-size: cover;
     border: 20px;
-    height: calc(100vh - 100px);
-    width: 100%;
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    height: 50vh;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(146, 204, 205);
+    box-sizing: border-box;
+    background-color: rgba(21, 54, 54, 0.2);
+    background-blend-mode: overlay;
+    
 }
+
+#password:hover {
+    background-color: rgb(146, 204, 205, 0.1);
+    background-blend-mode: overlay;
+    transition: all .1s ease-in-out;
+  }
+
+  
 
 #web-apis {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /* justify-content: space-around; */
     background-image:url("images/web-apis.png");
     background-size: cover;
     border: 20px;
-    height: calc(100vh - 100px);
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    height: 50vh;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(146, 204, 205);
+    box-sizing: border-box;
+    background-color: rgba(21, 54, 54, 0.2);
+    background-blend-mode: overlay;
+}
+
+#web-apis:hover {
+    background-color: rgb(146, 204, 205, 0.1);
+    background-blend-mode: overlay;
+    transition: all .1s ease-in-out;
+  }
+
+.row3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 7vh;
+    margin-left: 7.5vh;
     width: 100%;
+    margin-right: 10%;
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+}
+
+.break1 {
+    height: 0;
+    width: 4vh;
+}
+
+.break2 {
+    height: 0;
+    width: 4.5vh;
 }
 
 #third-party-apis {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     background-image:url("images/third-party-apis.png");
     background-size: cover;
     border: 20px;
-    height: calc(100vh - 100px);
-    width: 100%;
+    /* height: calc(100vh - 100px);
+    max-width: 40%; */
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(146, 204, 205);
+    box-sizing: border-box;
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    background-color: rgba(21, 54, 54, 0.2);
+    background-blend-mode: overlay;
 }
+
+#third-party-apis:hover {
+    background-color: rgb(146, 204, 205, 0.3);
+    background-blend-mode: overlay;
+    transition: all .1s ease-in-out;
+  }
 
 #server-side-apis {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /* justify-content: space-around; */
     background-image:url("images/server-side-apis.jpg");
     background-size: cover;
     border: 20px;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px);
+    width: 30%; */
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(146, 204, 205);
+    box-sizing: border-box;
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    background-color: rgba(21, 54, 54, 0.2);
+    background-blend-mode: overlay;
+}
+
+#server-side-apis:hover {
+    background-color: rgb(146, 204, 205, 0.3);
+    background-blend-mode: overlay;
+    transition: all .1s ease-in-out;
+  }
+
+footer {
+    color: rgb(49, 52, 68);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
     width: 100%;
 }
-    
+
 #contact-me {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    color: rgb(49, 52, 68);
+    /* the below works to get the bar aligned with the other bars, but not to get the me to wrap onto next line */
+    margin-top: 4vh;
+    padding: 5px;
+    position: relative;
 }
 
-.contact-links {
+.contact-me-section-title {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%; 
-    justify-content: space-evenly;
-}
-
-.contact-links a {
+    /* flex-direction: row; */
+    font-size: 25px;
     color: rgb(49, 52, 68);
-    text-underline-offset: 10px;
+    border-right: 5px solid rgb(49, 52, 68);
+    height: 50vh;
+    position: relative;
 }
 
-/* @media screen and (min-width: 768px) {
-    .some-class {
-        width: x%;
-    }
+
+ul.contact-links {
+    width: 90%;
+    position: relative;
+}
+    
+li.contact-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: left;
+    justify-content: space-around;
+    padding: 14px 40px;
+    margin-left: 9vh;
+    font-size: 20px;
+    color: rgb(49, 52, 68);
+    position: relative;
 }
 
-@media screen and (min-width: 992px) {
-    .some-class {
-        width: x%;
-    }
-} */
+footer a {
+    color: rgb(49, 52, 68);
+    display: inline;
+    float: right;
+    /* flex-direction: row; */
+    width: 100%; 
+    font-size: 20px;
+    margin-top: 4vh;
+    padding: 5px;
+    /* justify-content: center; */
+    list-style-type: none;
+    position: relative;
+
+}
+
+a:hover.contact-links {
+    color: rgb(155, 22, 155);
+    display: inline-block;
+    transition: all .1s ease-in-out;
+}

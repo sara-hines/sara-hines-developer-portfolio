@@ -11,12 +11,12 @@
     <header>
         <h1>Sara Hines: Developer Portfolio</h1>
         <nav>
-            <ul>
+            <ul class="light-links">
                 <li>
                     <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#work">Work</a>
+                    <a href="#work-section-title">Work</a>
                 </li>
                 <li>
                     <a href="#contact-me">Contact Me</a>
@@ -33,9 +33,9 @@
     </section>
 
     <main>
-        <section class="content-container">
-            <section id="about-me">
-                <h2 class="section-title">About Me</h2>
+        <div class="flex-content">
+            <div id="about-me">
+                <h2 class="about-me-section-title">About Me</h2>
                 <section class="about-me-paragraphs">
                 <p>Hi! My name is Sara Hines, and you've landed on my developer portfolio, a project which is evolving with me as I grow my knowledge of web and software development. I come from an environmental sciences background--Bachelor of Science in Ecosystem and Sustainability from Colorado State University--, and am studying software development with the aim to merge my interest in sustainability with my growing passion for software engineering.</p>
                 <br>
@@ -43,63 +43,81 @@
                 <br>
                 <p>Once I have a solid grasp of coding fundamentals, I would love to support a sustainability focused or greentech company, supporting them with their software engineering needs. I'm thrilled to be part of a community of learners with DU's Full Stack Coding program, and am excited to delve deeper into the world of software engineering!</p>
                 </section>
-            </section> 
+             
+            </div> 
 
-            <section class="sara-hines-photo">
+            <div class="sara-hines-photo">
                 <img src="images/sara-hines-photo.jpg" alt ="Photo of Sara Hines"/>
-            </section>
+            </div>
 
-            <section id="work">
-                <h2 class="section-title">Work</h2>
+            <div><h2 id="work-section-title">Work</h2></div>
 
-                <section class="portfolio-projects-large">
-                    <section id="marketing-website">
-                        <h3>Horiseon Marketing Agency Website</h3>
-                    </section>
-                </section>
+            <div id="work">
+                <!-- <h2 class="work-section-title">Work</h2> -->
+                        <a href="https://sara-hines.github.io/marketing-agency-website-refactored/" id="marketing-website">
+                            <h3>Horiseon Marketing Agency Website</h3>
+                        </a>
 
-                <section class="portfolio-projects-small">
-                    <section id="password">
-                        <h3>JavaScript Password Generator (Coming Soon)</h3>
-                    </section>
-                </section>
+                    <div class="row2">
+                        <section id="password">
+                            <h3>JavaScript Password Generator (Coming Soon)</h3>
+                        </section>
 
-                <section class="portfolio-projects-small">
-                    <section id="web-apis">
-                        <h3>Code Quiz Using Web APIs (Coming Soon)</h3>
-                    </section>
-                </section>
+                        <div class="break1"></div>
 
-                <section class="portfolio-projects-small">
-                    <section id="third-party-apis">
-                        <h3>JQuery Project: 3rd Party APIs (Coming Soon)</h3>
-                    </section>
-                </section>
+                        <section id="web-apis">
+                            <h3>Code Quiz Using Web APIs (Coming Soon)</h3>
+                        </section>
 
-                <section class="portfolio-projects-small">
-                    <section id="server-side-apis">
-                        <h3>Fetch: Server-Side APIs (Coming Soon)</h3>
-                    </section>
-                </section>
+                        <div class="break2"></div>
+                    </div>
 
-            </section>
+                    
 
-            <section id="contact-me">
-                <h2 class="section-title">Contact Me</h2>
-                <section class="contact-links">
-                    <a href="mailto:sara.marie.hines1@gmail.com">Email</a>
-                    <a href="tel:7205089868">720.508.9868</a>
-                    <a href="https://www.linkedin.com/in/sara-hines/">LinkedIn</a>
-                    <a href="https://github.com/sara-hines">GitHub</a>
-                    <a href="https://twitter.com/sahines14">Twitter</a>
-                </section>
-            </section>
+                    <div class="row3">
+                        <section id="third-party-apis">
+                            <h3>JQuery Project: 3rd Party APIs (Coming Soon)</h3>
+                        </section>
 
-        </section>
+                        <div class="break1"></div>
+
+                        <section id="server-side-apis">
+                            <h3>Fetch: Server-Side APIs (Coming Soon)</h3>
+                        </section>
+
+                        <div class="break2"></div>
+                    </div>
+
+                    
+                </div>
+        </div>
+
+        <div id="contact-me">
+            <footer>
+                <h2 class="contact-me-section-title">Contact<br>Me</h2>
+                <ul class="contact-links">
+                    <li class="contact-links">
+                        <a href="mailto:sara.marie.hines1@gmail.com">Email</a>
+                    </li>
+                    <li class="contact-links">
+                        <a href="tel:7205089868">720.508.9868</a>
+                    </li>
+                    <li class="contact-links">
+                        <a href="https://www.linkedin.com/in/sara-hines/">LinkedIn</a>
+                    </li>
+                    <li class="contact-links">
+                        <a href="https://github.com/sara-hines">GitHub</a>
+                    </li>
+                    <li class="contact-links">
+                        <a href="https://twitter.com/sahines14">Twitter</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
 
 
     </main>
-
+    <!-- <script src="script.js"></script> -->
 </body>
 
 
