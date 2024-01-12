@@ -4,12 +4,11 @@
     margin: 0;
 }
 
-
 body {
     /* /* display: flex;
     flex-direction: row;  */
     min-height: 100vh;
-    justify-content: flex-start;  */
+    justify-content: flex-start;
     background-color: rgb(242, 242, 252);
     margin: 0 auto;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
@@ -66,16 +65,7 @@ header nav ul li {
     font-size: 30px;
     color: rgb(49, 52, 68);
     text-underline-offset: 10px;
-
 }
-
-/* old code for the below selector:
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-    padding-bottom: 3px;
-    text-underline-offset: 10px;
-} */
 
 .banner {
     display: flex;
@@ -123,7 +113,7 @@ header nav ul li {
     flex-direction: row;
 }
 
-.about-me-section-title {
+#about-me-section-title {
     font-size: 25px;
     /* display: inline;
     text-align: right; */
@@ -499,7 +489,7 @@ footer {
     position: relative;
 }
 
-.contact-me-section-title {
+#contact-me-section-title {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
