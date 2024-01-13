@@ -42,10 +42,7 @@ To view this project, navigate to the deployed page at [https://sara-hines.githu
 
     ![screenshot-2-1440px](https://github.com/sara-hines/sara-hines-developer-portfolio/assets/90005274/09c2e471-0972-46d0-972f-a551b7be37f3)
 
-    ![screenshot-3-1440px](https://github.com/sara-hines/sara-hines-developer-portfolio/assets/90005274/0a223067-8f04-4c8e-b2f3-80d1de8e4cbc)
-
-    ![screenshot-4-1440px](https://github.com/sara-hines/sara-hines-developer-portfolio/assets/90005274/96797296-1aba-40d8-b13d-2c5c4302bba3)
-
+    ![screenshot-3-1440px](https://github.com/sara-hines/sara-hines-developer-portfolio/assets/90005274/979c07b6-80b7-4a80-ad03-15a0b93cbdec)
     
     The below screenshots show the appearance of the web page at a viewport width of around 976px.
 
@@ -53,7 +50,7 @@ To view this project, navigate to the deployed page at [https://sara-hines.githu
 
     ![screenshoot-2-976px](https://github.com/sara-hines/sara-hines-developer-portfolio/assets/90005274/84434a51-c2a9-415e-8ea7-8f57502d77ca)
 
-    ![screenshot-3-1440px](https://github.com/sara-hines/sara-hines-developer-portfolio/assets/90005274/bd1d40bd-17d6-48be-918c-6fc940c60dc8)
+    ![screenshoot-3-976px](https://github.com/sara-hines/sara-hines-developer-portfolio/assets/90005274/330bdf9a-0e2e-4ad7-b85c-11b92af799f7)
 
 ## Credits
 
@@ -70,6 +67,8 @@ Faraz. (2022, September 18). _How to Create a Responsive Card with a Glowing Hov
 Public Domain (2018). _Password protection, online security concept_ [Photo]. https://www.flickr.com/photos/155753322@N06/43712541271 
 
 Woodford, C. (2021). _The OSI model_ [Digital Art]. https://www.explainthatstuff.com/howcomputernetworkswork.html
+
+Zarla. (2024). [Black and white striped wood planks photo]. Zarla. https://www.zarla.com/guides/black-and-white-logos
 
 ## License
 

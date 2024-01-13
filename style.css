@@ -52,7 +52,7 @@ header nav ul li {
     margin-left: 5vh;
     font-size: 30px;
     color: rgb(49, 52, 68);
-    text-underline-offset: 10px;
+    text-underline-offset: 1vh;
 }
 
 a {
@@ -64,6 +64,7 @@ a:hover {
     transition: all .1s ease-in-out;
 }
 
+/* To create the dark blue and light blue striped banner, I started with a black and white striped image available online and created a url value to add the image, as well as an rgba color to overlay on top of the image (this is achieved with the backgound-blend-mode of overlay). I used the alpha of 0.347 to set an opacity that lead to a similar level of color as the banner in the mock-up image. I also remembered a helpful way to identify the rgb values of a color with the color picker tool in Microsoft Paint. */
 .banner {
     display: flex;
     flex-direction: row;
@@ -94,22 +95,24 @@ a:hover {
     justify-content: end;
 }
 
+/* I used a class "flex-content" on the box containing the About Me, Work, and Contact Me content in order to cause the children to behave as flex items. Flexbox is a way to cause elements to appear in rows (or columns) and wrap at the end of a line, without being held to the default inline or block display that different elements would have.  */
 .flex-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+/* For the below styling, which is applied on the section element marked with the "about-me" id, I used a width of 80% in order to divide the available viewport width between the About Me paragraphs and the photo of myself which appears to their right. */
 #about-me {
     display: flex;
     flex-direction: row;
     width: 80%;
 }
 
+/* I used the border-right property, along with a margin-left, in order to create a vertical line just to the right of the About Me section title. */
 #about-me-section-title {
     position: relative;
     font-size: 25px;
-    text-underline-offset: 10px;
     padding: 5px;
     margin-left: 2vh;
     color: rgb(49, 52, 68);
@@ -124,6 +127,7 @@ a:hover {
     margin-right: 0vh;
 }
 
+/* I created a div with the below class of "sara-hines-photo" to store the photo of myself and control the sizing and flow within the document. The width is set to 20% in order to divide the viewport width for the About Me paragraphs and the photo. */
 .sara-hines-photo {
     display: flex;
     flex-direction: row;
@@ -131,6 +135,7 @@ a:hover {
     width: 20%;
 }
 
+/* For the actual photo of myself, I set a width of 100% so that the photo takes up all of the available width in the image element it is immediately located within. */
 .sara-hines-photo img {
     display: flex;
     flex-direction: row;
@@ -148,7 +153,6 @@ a:hover {
     margin-left: 34px;
     margin-top: 4vh;
     height: 180vh;
-    text-underline-offset: 10px;
     border-right: 5px solid rgb(49, 52, 68);
 }
 
@@ -160,6 +164,7 @@ a:hover {
     margin-left: 10vh;
 }
 
+/* For each of my project boxes, I set an rgba background color and background-blend-mode of overlay so that the image appears with a slightly dark overcast, which will be removed when the user hovers over the project box. */
 #marketing-website {
     display: flex;
     flex-direction: column;
@@ -192,6 +197,7 @@ a:hover {
     height: 15vh;
 }
 
+/* For each of my project boxes, I used a hover pseuodoclass, background-color, background-blend-mode, and transition property so that the box eases into a new styling when the user hovers. This new styling applies a brighter, mostly transparant, color overlay to the box. */
 #marketing-website:hover {
     background-color: rgb(146, 204, 205, 0.1);
     background-blend-mode: overlay;
@@ -424,6 +430,7 @@ li.contact-links {
     font-size: 20px;
     color: rgb(49, 52, 68);
     position: relative;
+    text-underline-offset: 0.5vh;
 }
 
 footer a {
