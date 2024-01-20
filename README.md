@@ -2,7 +2,7 @@
 
 ## Description
 
-While I am building skills in software and web development, I created this portfolio project to practice my growing skills and to provide samples of my work for connections and potential employers to view. The HTML contains semantic elements, proprerly nested for readability and accuracy, and the CSS selects for elements, classes, and ID's to apply styling. I learned and practiced many new skills creating this project, including: how to contain and style flex elements to create a desired page layout; how to use the :hover selector; how to use the background-blend-mode and transition CSS properties; how to create a link to an email address, and how to create a link to a pdf document; and how to build with responsive design in mind. I look forward to refining this page over time and displaying increasingly advanced work as I progress!
+While I am building skills in software and web development, I created this portfolio project to practice my growing skills and to provide samples of my work for connections and potential employers to view. The HTML contains semantic elements, properly nested for readability and accuracy, and the CSS selects for elements, classes, and ID's to apply styling. I learned and practiced many new skills creating this project, including: how to contain and style flex elements to create a desired page layout; how to use the :hover selector; how to use the background-blend-mode and transition CSS properties; how to create a link to an email address, and how to create a link to a pdf document; and how to build with responsive design in mind. I look forward to refining this page over time and displaying increasingly advanced work as I progress!
 
 ## Installation
 
